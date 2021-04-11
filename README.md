@@ -4,6 +4,15 @@ Automation of API connection with Linux VPS servers
 Self-management files and connection of Presearch nodes with their API and VPS servers on Linux
 
 
+### Scripts to connect the API with Dashboard and self-manage the Nodes, tested on 2 VPS with Ubuntu 18.04 and 20.04 respectively
+
+Your node [registration code](https://nodes.presearch.org/dashboard).
+Your node [Private API Key](https://nodes.presearch.org/dashboard). button node "stats"
+API Presearch [Access docs](https://docs.presearch.org/nodes/api).
+
+#### Commands executed in order
+
+> Ubuntu terminal
 
 * Settle in the root
 ``` 
