@@ -6,7 +6,7 @@ Self-management files and connection of Presearch nodes with their API and VPS s
 
 
 * Settle in the root
-``` linux
+``` 
 cd $HOME
 ``` 
 
@@ -18,72 +18,72 @@ mkdir presearch
 
 
 * Located inside the folder
-``` linux
+``` 
 cd presearch
 ``` 
 
 
-Create the functions file with execution permission
+* Create the functions file with execution permission
 ``` 
 touch config.php && chmod +x config.php
 ``` 
 
 
-Create the functions file with execution permission
+* Create the functions file with execution permission
 ``` 
 touch methods.php && chmod +x methods.php
 ``` 
 
 
-Create the node status check file with execution permission
+* Create the node status check file with execution permission
 ``` 
 touch status.php && chmod +x status.php
 ``` 
 
 
-Update the packages
+* Update the packages
 ``` 
 apt-get update
 ``` 
 
 
-Install PHP
+* Install PHP
 ``` 
 apt-get install php
 ``` 
 
 
-Check installed php
+* Check installed php
 ``` 
 php -v
 ``` 
 
 
-Install cron
+* Install cron
 ``` 
 sudo apt install cron
 ``` 
 
 
-Install dos2unix
+* Install dos2unix
 ``` 
 sudo apt-get install dos2unix
 ``` 
 
 
-Install curl
+* Install curl
 ``` 
 sudo apt-get install php-curl
 ``` 
 
 
-Update the packages
+* Update the packages
 ``` 
 apt-get update
 ``` 
 
 
-Convert files to Unix format with dos2unix
+* Convert files to Unix format with dos2unix
 ``` 
 dos2unix config.php
 ``` 
@@ -96,7 +96,7 @@ dos2unix status.php
 
 
 
-Configure the config.php file
+* Configure the config.php file
 ``` 
 nano config.php
 ```
@@ -120,7 +120,7 @@ docker logs presearch-node' );
 ``` 
 
 
-Configure the methods.php file
+* Configure the methods.php file
 ``` 
 nano methods.php
 ``` 
@@ -165,7 +165,7 @@ function restart_node(){
 ``` 
 
 
-Configure the status.php file
+* Configure the status.php file
 ``` 
 nano status.php
 ``` 
@@ -197,13 +197,13 @@ foreach($node_data['nodes'] as $key=>$val){
 ``` 
 
 
-Verify that the cron service is running
+* Verify that the cron service is running
 ``` 
 systemctl status cron
 ``` 
 
 
-If it is not running we can activate it and start it and add it as a service at startup
+* If it is not running we can activate it and start it and add it as a service at startup
 ``` 
 sudo systemctl enable cron.service
 ``` 
@@ -212,13 +212,13 @@ sudo systemctl start cron.service
 ``` 
 
 
-Open the cron table to configure our scheduled tasks
+* Open the cron table to configure our scheduled tasks
 ``` 
 crontab -e
 ``` 
 
 
-Configure the periodicity of the task every 5 minutes (modify to your preference) add in the last empty line
+* Configure the periodicity of the task every 5 minutes (modify to your preference) add in the last empty line
 ``` 
 */5 * * * * sudo php -f /root/presearch/status.php
 ``` 
