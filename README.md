@@ -6,9 +6,9 @@ Self-management files and connection of Presearch nodes with their API and VPS s
 
 ### Scripts to connect the API with Dashboard and self-manage the Nodes, tested on 2 VPS with Ubuntu 18.04 and 20.04 respectively
 
-* Your node [registration code](https://nodes.presearch.org/dashboard).
-* Your node [Private API Key](https://nodes.presearch.org/dashboard). button node "stats"
-* API Presearch [Access docs](https://docs.presearch.org/nodes/api).
+* Your node [registration code](https://nodes.presearch.org/dashboard)
+* Your node [Private API Key](https://nodes.presearch.org/dashboard) button node "stats"
+* API Presearch [Access docs](https://docs.presearch.org/nodes/api)
 
 ### Commands executed in order
 
@@ -110,7 +110,7 @@ dos2unix status.php
 nano config.php
 ```
 
-Edit
+Edit script [config.php](https://github.com/YonisGomez/presearch-node/blob/main/config.php)
 ``` php
 <?php
 
@@ -134,7 +134,7 @@ docker logs presearch-node' );
 nano methods.php
 ``` 
 
-Edit
+Edit script [methods.php](https://github.com/YonisGomez/presearch-node/blob/main/methods.php)
 ``` php
 <?php
 
@@ -179,7 +179,7 @@ function restart_node(){
 nano status.php
 ``` 
 
-Edit
+Edit script [status.php](https://github.com/YonisGomez/presearch-node/blob/main/status.php)
 ``` php
 <?php
 
