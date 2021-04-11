@@ -6,7 +6,7 @@ Self-management files and connection of Presearch nodes with their API and VPS s
 
 
 * Settle in the root
-``` 
+``` linux
 cd $HOME
 ``` 
 
@@ -18,7 +18,7 @@ mkdir presearch
 
 
 * Located inside the folder
-``` 
+``` linux
 cd presearch
 ``` 
 
