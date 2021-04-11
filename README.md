@@ -9,11 +9,9 @@ function test() {
 }
 ```        
 
-# This is an <h1> tag
+This is an normal texto tag
 As Kanye West said:
   
-```
-function test() {
-  console.log("notice the blank line before this function?");
-}
-```
+# This is an h1 tag
+## This is an h2 tag
+###### This is an h6 tag
