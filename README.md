@@ -10,7 +10,7 @@ Self-management files and connection of Presearch nodes with their API and VPS s
 * Your node [Private API Key](https://nodes.presearch.org/dashboard). button node "stats"
 * API Presearch [Access docs](https://docs.presearch.org/nodes/api).
 
-#### Commands executed in order
+### Commands executed in order
 
 > Ubuntu terminal
 
