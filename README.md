@@ -4,21 +4,183 @@ Automation of API connection with Linux VPS servers
 Self-management files and connection of Presearch nodes with their API and VPS servers on Linux
 
 
-// We are at the root
+Settle in the root
 ``` 
 cd $HOME
 ``` 
 
 
-// We create a folder called presearch
+Create a folder called presearch
 ``` 
 mkdir presearch
 ``` 
 
 
-// We create a folder called presearch
-// Creamos una carpeta llamada presearch
-mkdir presearch
+Located inside the folder
+``` 
+cd presearch
+``` 
+
+
+Create the functions file with execution permission
+``` 
+touch config.php && chmod +x config.php
+``` 
+
+
+Create the functions file with execution permission
+``` 
+touch methods.php && chmod +x methods.php
+``` 
+
+
+Create the node status check file with execution permission
+``` 
+touch status.php && chmod +x status.php
+``` 
+
+
+Update the packages
+``` 
+apt-get update
+``` 
+
+
+Install PHP
+``` 
+apt-get install php
+``` 
+
+
+Check installed php
+``` 
+php -v
+``` 
+
+
+Install cron
+``` 
+sudo apt install cron
+``` 
+
+
+Install dos2unix
+``` 
+sudo apt-get install dos2unix
+``` 
+
+
+Install curl
+``` 
+sudo apt-get install php-curl
+``` 
+
+
+Update the packages
+``` 
+apt-get update
+``` 
+
+
+Convert files to Unix format with dos2unix
+``` 
+dos2unix config.php
+dos2unix methods.php
+dos2unix status.php
+``` 
+
+
+
+
+xxxxxxx
+``` 
+xxxxxx
+``` 
+
+
+
+
+xxxxxxx
+``` 
+xxxxxx
+``` 
+
+
+
+
+xxxxxxx
+``` 
+xxxxxx
+``` 
+
+
+
+
+xxxxxxx
+``` 
+xxxxxx
+``` 
+
+
+
+
+xxxxxxx
+``` 
+xxxxxx
+``` 
+
+
+
+
+xxxxxxx
+``` 
+xxxxxx
+``` 
+
+
+
+
+xxxxxxx
+``` 
+xxxxxx
+``` 
+
+
+
+
+xxxxxxx
+``` 
+xxxxxx
+``` 
+
+
+
+
+xxxxxxx
+``` 
+xxxxxx
+``` 
+
+
+
+
+xxxxxxx
+``` 
+xxxxxx
+``` 
+
+
+
+
+xxxxxxx
+``` 
+xxxxxx
+``` 
+
+
+
+
+
 
 
 
