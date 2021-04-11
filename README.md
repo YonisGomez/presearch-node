@@ -5,19 +5,19 @@ Self-management files and connection of Presearch nodes with their API and VPS s
 
 
 
-Settle in the root
+* Settle in the root
 ``` 
 cd $HOME
 ``` 
 
 
-Create a folder called presearch
+* Create a folder called presearch
 ``` 
 mkdir presearch
 ``` 
 
 
-Located inside the folder
+* Located inside the folder
 ``` 
 cd presearch
 ``` 
