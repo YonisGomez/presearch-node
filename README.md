@@ -4,11 +4,20 @@ Automation of API connection with Linux VPS servers
 Self-management files and connection of Presearch nodes with their API and VPS servers on Linux
 
 
-### Scripts to connect the API with Dashboard and self-manage the Nodes, tested on 2 VPS with Ubuntu 18.04 and 20.04 respectively
+### Scripts to connect the API with Dashboard and self-manage the Nodes, tested on VPS with Ubuntu 18.04 and 20.04 respectively
 
 * Your node [registration code](https://nodes.presearch.org/dashboard)
 * Your node [Private API Key](https://nodes.presearch.org/dashboard) button node "stats"
 * API Presearch [Access docs](https://docs.presearch.org/nodes/api)
+
+### Scripts in this repository
+
+* Script [config.php](https://github.com/YonisGomez/presearch-node/blob/main/config.php) : Contains the private keys of the API and the node registration code, email for notifications, IP address of the node in the current VPS and other configurations and constants. (We are each responsible for the security of this script on our server)
+* Script [methods.php](https://github.com/YonisGomez/presearch-node/blob/main/methods.php) : Contains the functions available to interact with the Presearch Nodes API and Docker containers on the current server, ex: (get_json_data, send_mail_notification, restart_node)
+* Script [status.php](https://github.com/YonisGomez/presearch-node/blob/main/status.php) : It is in charge of verifying every x (cron) time if the THIS_NODE_ADDR Node is online, otherwise it restarts it and notifies SEND_ERRORS_TO by mail with the description of the node and how long it has been disconnected.
+* Script [claim.php](https://github.com/YonisGomez/presearch-node/blob/main/claim.php) : Coming soon... (PUT method to claim PRE earned)
+* Script [unclaimed.php](https://github.com/YonisGomez/presearch-node/blob/main/claim.php) : Coming soon... (Check every X (cron) time if a PRE_TO_CLAIM amount was reached and notify by mail SEND_ERRORS_TO)
+
 
 ### Commands executed in order
 
